@@ -1,1 +1,0 @@
-# Apache-Cassandra-Read-Write-Path-Compaction
