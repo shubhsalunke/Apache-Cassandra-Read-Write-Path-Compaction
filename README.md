@@ -106,6 +106,8 @@ CREATE TABLE user_events (
 )
 WITH CLUSTERING ORDER BY (event_time DESC)
 AND compaction = {'class': 'SizeTieredCompactionStrategy'};
+
+EXIT;
 ```
 
 ---
