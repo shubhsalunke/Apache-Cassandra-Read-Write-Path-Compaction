@@ -1,6 +1,6 @@
-# 🚀 Apache Cassandra Read/Write Path & Compaction (Node.js + Docker)
+# Apache Cassandra Read/Write Path & Compaction (Node.js + Docker)
 
-## 📌 Project Overview
+## Project Overview
 This project demonstrates how **Apache Cassandra** works internally with:
 
 - Write Path (CommitLog → Memtable → SSTable)
@@ -11,7 +11,7 @@ This project demonstrates how **Apache Cassandra** works internally with:
 
 ---
 
-## 📥 Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/shubhsalunke/Apache-Cassandra-Read-Write-Path-Compaction.git
@@ -20,7 +20,7 @@ cd Apache-Cassandra-Read-Write-Path-Compaction
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 * Apache Cassandra 4.1 (Docker)
 * Node.js (v20+)
@@ -29,9 +29,9 @@ cd Apache-Cassandra-Read-Write-Path-Compaction
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-### 1️⃣ Install Dependencies
+### Install Dependencies
 
 ```bash
 sudo apt update -y
@@ -55,7 +55,7 @@ npm -v
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Apache-Cassandra-Read-Write-Path-Compaction/
@@ -85,7 +85,7 @@ docker exec -it task8-cassandra nodetool status
 
 ---
 
-## 🗄️ Cassandra Database Setup
+## Cassandra Database Setup
 
 ```bash
 docker exec -it task8-cassandra cqlsh
@@ -112,7 +112,7 @@ EXIT;
 
 ---
 
-## ⚡ Node.js Setup
+## Node.js Setup
 
 ```bash
 cd app
@@ -122,7 +122,7 @@ npm install cassandra-driver
 
 ---
 
-## ▶️ Run Application
+## Run Application
 
 ```bash
 node index.js
@@ -130,7 +130,7 @@ node index.js
 
 ---
 
-## 🔍 Verification Steps
+## Verification Steps
 
 ### Check CommitLog
 
@@ -164,7 +164,7 @@ docker exec -it task8-cassandra nodetool tablestats task8_demo.user_events
 
 ---
 
-## 🧠 Concepts
+## Concepts
 
 ### Write Path
 
@@ -186,7 +186,7 @@ Multiple SSTables → Merge → Single SSTable
 
 ---
 
-## 🎯 Result
+## Result
 
 * Cassandra deployed successfully
 * Node.js integrated
